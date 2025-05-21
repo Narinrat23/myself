@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narinrat</title>
+    <link rel="stylesheet" href="mystyle5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="button">
+
+        <a href="index.html">
+            <h3> Home</h3>
+        </a>
+
+        <a href="introduce.html">
+            <h3>My Introduce</h3>
+        </a>
+
+        <a href="experince.html">
+            <h3>My Experience</h3>
+        </a>
+
+        <a href="projects.html">
+            <h3>My Project</h3>
+        </a>
+
+        <a href="contact.html">
+            <h3>My Contact</h3>
+        </a>
+
+    </div>
+    <div class="head">
+        <h1>
+            <i class="material-icons">favorite</i>
+            My Projects
+            <i class="material-icons">favorite</i>
+        </h1>
+    </div>
+    <div class="thai">
+        <div class="profile">
+            <img src="project10.jpg" alt="" width="350px" height="300px" style="border-radius: 20px">
+            <img src="project7.jpg" alt="" width="380px" height="300px" style="border-radius: 20px">
+            <img src="project4.jpg" alt="" width="380px" height="300px" style="border-radius: 20px">
+        </div>
+        <div class="head2">
+            <h3> 6-legged spider robot<i class="material-icons">favorite</i><br></h3>
+        </div>
+        <div class="content">
+            <h3>
+                ณ ปัจจุบัน ดิฉันจบการศึกษาจากมหาวิทยาลัยศิลปากรวิทยาเขตพระราชวังสนามจันทร์
+                คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม <br>
+                โดยดิฉันได้มีความสนใจทางด้านเกี่ยวกับการพัฒนาโค้ดในด้านของซอฟต์แวร์ไม่ว่าจะเป็น หุ่นยนต์หรือตัว Web
+                Application <br>
+                โปรเจคที่ดิฉันได้รับมอบหมายคือการสร้างซอฟต์แวร์และการจำลองโมเดล "หุ่นยนต์แมลง 6 ขา"
+                หรือมีชื่อโครงงานว่า <br>
+                "การค้นหาท่าเดินที่เหมาะสมของหุ่นยนต์แมลงหกขาด้วยการจำลองการทำงานเชิงกายภาพ" หรือ
+                "Optimizing The Gait
+                Of A Hexapod Robot Using Physical Simulation" <br>
+                เพื่อศึกษาเกี่ยวกับการหาท่าเดินที่ดีที่สุดของหุ่นยนต์แมลง 6 ขา โดยจะใช้การหาค่าที่เหมาะที่สุดหรือ PSO
+                ในการ Optimize สำหรับปรับค่าพารามิเตอร์ให้ได้เป็นท่าเดินออกมา<br>
+                และจำลองบนโปรแกรม Pybullet ซึ่งจะมีเกณฑ์วัดสองเงื่อนไข คือ
+                ขาของตัวหุ่นไม่ชนกันและความเร็วเฉลี่ยที่มีการเคลื่อนที่ได้ไวที่สุด<br>
+            </h3>
+        </div>
+        <div class="content1">
+            <h3>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สำหรับ
+                URDF
+                (Unified Robot Description Format) คือ รูปแบบไฟล์ XML
+                ที่ใช้สำหรับการจำลองโมเดลหุ่นยนต์ขึ้นมาเพื่ออธิบายลักษณะกายภาพของตัวโมเดลไม่ว่าจะเป็น สี พื้นผิว ตำแหน่ง
+                โดยจะมีการเชื่อมต่อส่วนประกอบต่างๆโดยใช้ Link และ Joint
+            </h3>
+            <h3>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สำหรับ
+                Particle Swarm Optimization (PSO)
+                เป็นอัลกอริทึมการหาค่าเหมาะสมที่สุดที่ได้รับแรงบันดาลใจมาจากพฤติกรรมทางธรรมชาติของสัตว์ที่อยู่อาศัยเป็นฝูง
+                <br> เช่น ฝูงนกหรือฝูงปลา ที่มีการเคลื่อนที่ร่วมกันอย่างเป็นระบบเพื่อค้นหาแหล่งอาหารหรือเป้าหมาย
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PSO
+                ใช้แนวคิดของ อนุภาค (Particle) ซึ่งเป็นตัวแทนของนกหนึ่งตัว โดยแต่ละอนุภาคจะมี ตำแหน่ง (Position)
+                และความเร็ว (Velocity) ในการเคลื่อนที่ไปในพื้นที่ของคำตอบหรือแหล่งอาหาร เพื่อค้นหาคำตอบที่ดีที่สุด
+                อนุภาคแต่ละตัวจะปรับตำแหน่งของตัวเองในแต่ละรอบตามประสบการณ์ของตัวเอง เรียกว่า ค่าที่ดีที่สุดของอนุภาค
+                (pbest: Particle best) และตามประสบการณ์ของฝูง เรียกว่า ค่าที่ดีที่สุดของฝูง (gbest: Global best)
+            </h3>
+            <h3>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โดยดิฉันได้ทำการสร้างแบบจำลองของ
+                หุ่นยนต์แมลง 6 ขาขึ้นมา และเรียนรู้วิธีการขยับขาตามต้นแแบบจริง ซึ่งดิฉันทำโดยการจำลองโมเดลบน Rviz <br>
+                และการเขียนซอฟต์แวร์ในการสร้างโมเดลด้วยโปรแกรม Visual Studio Code โดยจะรันในส่วนของไฟล์ XML ในนามสกุลของ
+                .urdf และนำมาจำลองบนโปรแกรม Pybullet เพื่อค้นหาท่าเดินที่ดีที่สุดโดยใช้ PSO
+            </h3>
+        </div>
+
+        <div class="head2">
+            <h3>ส่วนประกอบโมเดลหุ่นยนต์แมลง 6 ขา</h3>
+        </div>
+        <div class="content3">
+            <div class="con1">
+                <h3>โมเดลหุ่นยนต์แมลง 6 ขา จากขา 1 ข้าง (ฐานหกเหลี่ยม)<i class="material-icons">grade</i>
+                    <ul>
+                        <li>
+                            base_link (ฐานเป็นรูปหกเหลี่ยม)
+                        </li>
+                        <li>
+                            1_leg (ส่วนประกอบขาที่ 1 ตำแหน่งบนติดกับตัวฐาน)
+                        </li>
+                        <li>
+                            2_leg (ส่วนประกอบขาที่่ 1 ตำแหน่งขาตรงกลาง)
+                        </li>
+                        <li>
+                            3_leg (ส่วนประกอบขาที่่ 1 ตำแหน่งขาล่างสุดติดกับพื้น)
+                        </li>
+                        <li>
+                            base_joint (ข้อต่อตัวฐาน)
+                        </li>
+                        <li>
+                            base_2_joint (ข้อต่อตำแหน่งที่ 1-2)
+                        </li>
+                        <li>
+                            base_3_joint (ข้อต่อตำแหน่งที่ 2-3)
+                        </li>
+                    </ul>
+                </h3>
+            </div>
+        </div>
+        <div class="head2">
+            <h3>โมเดลหุ่นยนต์แมลง 6 ขาจากขา 1 ข้าง<i class="material-icons">favorite</i><br></h3>
+        </div>
+        <div class="profile">
+            <img src="project10.jpg" alt="" width="350px" height="300px" style="border-radius: 50px">
+            <img src="project9.jpg" alt="" width="350px" height="300px" style="border-radius: 50px">
+            <img src="project8.jpg" alt="" width="350px" height="300px" style="border-radius: 50px">
+        </div>
+        <div class="content">
+            <h3>สำหรับโมเดลหุ่นยนต์แมลง 6 ขา โดยเริ่มศึกษาจาก 1 ขาก่อนพบว่า
+                การขยับของส่วนประกอบขานั้นไม่เหมือนกันในการเคลื่อนที่<br>
+                ดังนั้นแต่ละส่วนประกอบจะมีมุมและองศาในการขยับที่แตกต่างกัน
+            </h3>
+        </div>
+
+        <div class="content2">
+            <div class="con1">
+                <h3>ส่วนประกอบตำแหน่งที่ 1 </h3>
+                <ul>
+                    <li>
+                        <h3>
+                            หมุนตามแกน Z
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="con1">
+                <h3>ส่วนประกอบตำแหน่งที่ 2 และ 3</h3>
+                <ul>
+                    <li>
+                        <h3>
+                            หมุนตามแกน x
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="video-con">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="head2">
+            <h3>โมเดลหุ่นยนต์แมลง 6 ขา (ฐานหกเหลี่ยม)<i class="material-icons">favorite</i><br></h3>
+        </div>
+        <div class="profile">
+            <img src="project7.jpg" alt="" width="360px" height="300px" style="border-radius: 50px">
+            <img src="project6.jpg" alt="" width="360px" height="300px" style="border-radius: 50px">
+        </div>
+
+        <div class="content8">
+            <h3>ตัวอย่างขาที่ 1 สำหรับการหมุน</h3>
+        </div>
+        <div class="content9">
+            <div class="con3">
+                <h3>ส่วนประกอบตำแหน่งที่ 1 </h3>
+                <ul>
+                    <li>
+                        <h3>
+                            หมุนตามแกน Z
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="con3">
+                <h3>ส่วนประกอบตำแหน่งที่ 2 และ 3</h3>
+                <ul>
+                    <li>
+                        <h3>
+                            หมุนตามแกน x
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="head2">
+            <h3>โมเดลหุ่นยนต์แมงมุม 6 ขา (ฐานหกเหลี่ยมตามต้นแบบจริง)<i class="material-icons">favorite</i><br></h3>
+        </div>
+        <div class="profile">
+            <img src="project4.jpg" alt="" width="260px" height="200px" style="border-radius: 50px">
+            <img src="project3.jpg" alt="" width="260px" height="200px" style="border-radius: 50px">
+            <img src="project2.jpg" alt="" width="260px" height="200px" style="border-radius: 50px">
+            <img src="c9.jpg" alt="" width="260px" height="200px" style="border-radius: 50px">
+        </div>
+        <div class="profile">
+            <img src="project13.jpg" alt="" width="260px" height="320px" style="border-radius: 50px">
+            <img src="project14.jpg" alt="" width="260px" height="320px" style="border-radius: 50px">
+        </div>
+        <div class="content">
+            <h3>สำหรับโมเดลแมงมุมหุ่นยนต์ 6 ขาฐานหกเหลี่ยมตามต้นแบบ สิ่งที่เพิ่มเข้ามาคือการเพิ่มฐานหกเหลี่ยมเข้ามา 1
+                อันโดยจำลองด้วยโปรแกรม Blender และส่งออกเป็นไฟล์ urdf <br>เพื่อจำลองบน Rviz และเพิ่มฐานทรงกระบอกอีก 6
+                ขาเข้าไปเพื่อยึดกับฐานหกเหลี่ยมดังนั้น
+                การขยับของส่วนประกอบขาทั้งหมดนั้นจะไม่เหมือนกับ<br>
+                ในการเคลื่อนที่แบบเชื่อมกับตัวฐานหกเหลี่ยมโดยตรง
+                แต่จะเชื่อมติดกับขาทรงกระบอกแทน<br>
+                ดังนั้นแต่ละส่วนประกอบจะมีมุมและองศาในการขยับที่แตกต่างกัน
+                และตำแหน่งของขาที่เหลือตามมุมต่างๆของฐานที่แตกต่างกัน
+            </h3>
+        </div>
+        <div class="content8">
+            <h3>ตัวอย่างขาที่ 1 สำหรับการหมุน</h3>
+        </div>
+        <div class="content9">
+            <div class="con3">
+                <h3>ส่วนประกอบตำแหน่งที่ 1 </h3>
+                <ul>
+                    <li>
+                        <h3>
+                            หมุนตามแกน Z (ยึดติดกับขาทรงบอก)
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="con3">
+                <h3>ส่วนประกอบตำแหน่งที่ 2 และ 3</h3>
+                <ul>
+                    <li>
+                        <h3>
+                            หมุนตามแกน x
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="video-con">
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="head2">
+            <h3>ภาพรวมของโครงงานและหุ่นยนต์ที่ใช้สำหรับการจำลอง<i class="material-icons">favorite</i><br></h3>
+        </div>
+        <div class="profile">
+            <img src="ภาพรวม.png" alt="" width="650px" height="420px" ">
+        </div>
+        <div class=" content">
+            <h3>และเมื่อสร้างโมเดลหุ่นยนต์แมลง 6 ขา เรียบร้อยแล้ว เราจะนำมาทำการจำลองผ่านโปรแกรม Pybullet
+                ซึ่งเป็นโปรแกรมการจำลองเชิงกายภาพแบบเรียลไทม์
+                <br>ใช้สำหรับจำลองการเคลื่อนที่ของหุ่นยนต์หรือว่าตัวละครเสมือนจริงรวมไปถึงสภาพแวดล้อมต่างๆ
+                โดยเราจะใช้การ Optimize
+                ท่าเดินของหุ่นยนต์โดยใช้ PSO
+                ในการปรับค่าพารามิเตอร์ในการเดินของหุ่นยนต์เพื่อค้นหาท่าเดินที่เหมาะสมซึ่งจะมีเกณฑ์การประเมินอยู่ 2
+                ข้อคือ ขาของตัวหุ่นไม่ชนกันและความเร็วเฉลี่ยที่ดีที่สุด
+                <br>เพื่อหลีกเลี่ยงการทดสอบกับตัวหุ่นยนต์จริงเพื่อลดความเสียหายที่อาจเกิดขึ้น
+            </h3>
+        </div>
+        <div class="content8">
+            <h3>หุ่นยนต์แมลง 6 ขา ที่ใช้สำหรับการจำลอง</h3>
+        </div>
+        <div class="profile">
+            <img src="straight.png" alt="" width="400px" height="400px" style="border-radius: 50px">
+        </div>
+        <div class="head2">
+            <h3>ผลของการจำลอง<i class="material-icons">favorite</i><br></h3>
+        </div>
+        <div class="video-con">
+            <video controls>
+                <source src="straight.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="profile">
+            <img src="PSO.png"">
+        </div>
+        <div class=" content">
+            <h3>จากการจำลองของหุ่นยนต์จะพบว่าหุ่นยนต์สามารถเดินได้ไวและขาไม่ชนกันเนื่อจากการปรับค่าของการใช้ PSO
+                <br>ซึ่งในที่นี้จะได้ค่าความเร็วเฉลี่ยอยู่ที่ 0.86253 m/s เมื่อมีระยะทาง 0.34494 m
+                โดยเราจะกำหนดค่าคงที่ของเวลาอยู่ที่ 400 ms
+                <br>และเมื่อทำการจำลองหลายๆครั้งจะพบว่า PSO
+                มีการเรียนรู้ในการปรับค่าพารามิเตอร์เพื่อหารท่าเดินที่ดีที่สุดเรื่อยๆ
+            </h3>
+        </div>
+        <div class="video-con">
+            <video controls>
+                <source src="test_straight_good.MOV" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
+
+</html>
